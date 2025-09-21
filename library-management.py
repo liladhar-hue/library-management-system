@@ -100,7 +100,7 @@ def populate_data(conn):
         ('Priya Singh', '789 Defence Colony', '999-888-7777', 'priya.s@example.com'),
         ('Sameer Khan', '101 MG Road', '981-234-5678', 'sameer.k@example.com')
     ]
-    cursor.executemany("INSERT INTO Members (MemberName, Address, PhoneNumber, Email) VALUES (?, ?, ?, ?, ?)", members)
+    cursor.executemany("INSERT INTO Members (MemberName, Address, PhoneNumber, Email) VALUES (?, ?, ?, ?)", members)
 
     conn.commit()
     print("Sample data populated successfully.")
